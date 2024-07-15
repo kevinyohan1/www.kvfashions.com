@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KV Fashions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        #hero {
+            background-color: #808080;
+            height: 500px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        #hero h2 {
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        section {
+            padding: 40px 20px;
+            margin: 10px auto;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            flex: 1 1 calc(25% - 40px);
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fafafa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            color: #333;
+            margin: 15px 0 10px;
+        }
+        .product p {
+            color: #555;
+        }
+        .product button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .product button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KV Fashions</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Discover Your New Favorite T-Shirt</h2>
+    </section>
+
+    <section id="home">
+        <h2>Welcome to KV Fashions!</h2>
+        <p>Explore our collection of stylish t-shirts in various colors.</p>
+    </section>
+
+    <section id="shop">
+        <h2>Shop Our Collection</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="WhatsApp Image 2024-07-14 at 13.06.48.jpg" alt="Blue T-Shirt">
+                <h3>Blue T-Shirt</h3>
+                <p>1200Rs</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="WhatsApp Image 2024-07-14 at 13.06.35.jpg" alt="Gray T-Shirt">
+                <h3>Gray T-Shirt</h3>
+                <p>1200Rs</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="WhatsApp Image 2024-07-14 at 13.06.53.jpg" alt="Red T-Shirt">
+                <h3>Red T-Shirt</h3>
+                <p>1200Rs</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="WhatsApp Image 2024-07-14 at 13.06.54.jpg" alt="Maroon T-Shirt">
+                <h3>Maroon T-Shirt</h3>
+                <p>1200Rs</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We offer stylish and affordable t-shirts for everyone. Discover your new favorite today!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:yohankevin74@gmail.com">yohankevin74@gmail.com</a></p>
+        <p>Phone: 071 40574746</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KV Fashions. All rights reserved.</p>
+        <p>Designed by KV Fashions Team</p>
+    </footer>
+</body>
+</html>
